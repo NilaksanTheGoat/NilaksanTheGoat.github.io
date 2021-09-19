@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>A script on this papge starts this clock:</p>
+<p id="demo"></p>
+<button onclick=""></button>
+<button onclick="myStopFunction()">Stop time</button>
+<script type="text/javascript">
+	var MyVar = setInterval(myTimer, 1000);
+	function myTimer() {
+		var date = new Date();
+		console.log(date);
+		var time = date.toLocaleTimeString();
+		console.log(time);
+		document.getElementById("demo").innerHTML = time;
+        }
+        function myStopFunction() {
+        	clearInterval(myVar);
+        }
+</script>
+
+</body>
+</html>
